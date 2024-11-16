@@ -8,7 +8,7 @@ import views.TodoListView;
 
 public class Main {
     public static void main(String[] args) {
-        Database database = new Database("my_database", "root", "your_password_here", "localhost", "3306");
+        Database database = new Database("my_database", "root", "", "localhost", "3306");
         database.setup();
 
         TodoListRepository todoListRepository = new todoListRepositoryDbImpl(database); // Corrected class name
